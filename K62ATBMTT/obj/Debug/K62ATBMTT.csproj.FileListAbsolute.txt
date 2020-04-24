@@ -1,0 +1,9 @@
+D:\Projects\K62ATBMTT\K62ATBMTT\bin\Debug\K62ATBMTT.exe
+D:\Projects\K62ATBMTT\K62ATBMTT\bin\Debug\K62ATBMTT.pdb
+D:\Projects\K62ATBMTT\K62ATBMTT\obj\Debug\K62ATBMTT.csprojAssemblyReference.cache
+D:\Projects\K62ATBMTT\K62ATBMTT\obj\Debug\K62ATBMTT.Form1.resources
+D:\Projects\K62ATBMTT\K62ATBMTT\obj\Debug\K62ATBMTT.Properties.Resources.resources
+D:\Projects\K62ATBMTT\K62ATBMTT\obj\Debug\K62ATBMTT.csproj.GenerateResource.cache
+D:\Projects\K62ATBMTT\K62ATBMTT\obj\Debug\K62ATBMTT.csproj.CoreCompileInputs.cache
+D:\Projects\K62ATBMTT\K62ATBMTT\obj\Debug\K62ATBMTT.exe
+D:\Projects\K62ATBMTT\K62ATBMTT\obj\Debug\K62ATBMTT.pdb

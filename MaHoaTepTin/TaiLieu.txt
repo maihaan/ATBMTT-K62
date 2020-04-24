@@ -1,0 +1,31 @@
+﻿Mô tả bài toán:
+	- Viết chương trình mã hóa tệp tin bất kỳ băng thuật toán Cesar và giải mã tệp tin 
+	đã bị mã hóa
+
+INPUT:
+	- Khóa K = x
+	- Bảng chữ cái
+	- Tệp tin cần mã hóa hoặc giải mã
+
+OUTPUT:
+	- Tệp tin đã được mã hóa hoặc tệp tin đã được giải mã
+
+
+Khi đọc tệp tin giá trị mà chúng ta đọc được là một mảng byte, như vậy bài toán mã hóa sẽ 
+trở thành bài toán mã hóa các giá trị byte (Giá trị byte là các con số nằm trong khoảng từ 
+0 đến 255) --> Bảng chữ cái của chúng ta lúc này không phải là các ký tự abc mà là các chữ 
+số nằm trong khoảng từ 0 đến 255.
+
+Thứ tự các công việc mà chúng ta cần làm là:
+- Xây dựng bảng chữ cái (0 - 255)
+- Viết hàm mã hóa và giải mã đầu vào là byte và đầu ra cũng là byte
+
+
+Hàm mã hóa tệp:
+	- Input: Đường dẫn đến tệp tin
+	- Output: Tệp tin được mã hóa ghi trên ổ đĩa
+	- Nội dung thực hiện:
+		+ B1: Đọc tệp tin vào mảng byte có kích thước cố định (1024 byte)
+		+ B2: Mã hóa mảng byte đã đọc được
+		+ B3: Ghi dữ liệu đã mã hóa vào tệp tin đích trên ổ đĩa
+		+ Quay lại bước 1 và lặp lại cho đến khi đọc hết tệp tin cần mã hóa

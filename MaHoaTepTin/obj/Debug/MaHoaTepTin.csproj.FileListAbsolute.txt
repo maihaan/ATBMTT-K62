@@ -1,0 +1,9 @@
+D:\Projects\K62ATBMTT\MaHoaTepTin\bin\Debug\MaHoaTepTin.exe
+D:\Projects\K62ATBMTT\MaHoaTepTin\bin\Debug\MaHoaTepTin.pdb
+D:\Projects\K62ATBMTT\MaHoaTepTin\obj\Debug\MaHoaTepTin.csprojAssemblyReference.cache
+D:\Projects\K62ATBMTT\MaHoaTepTin\obj\Debug\MaHoaTepTin.Form1.resources
+D:\Projects\K62ATBMTT\MaHoaTepTin\obj\Debug\MaHoaTepTin.Properties.Resources.resources
+D:\Projects\K62ATBMTT\MaHoaTepTin\obj\Debug\MaHoaTepTin.csproj.GenerateResource.cache
+D:\Projects\K62ATBMTT\MaHoaTepTin\obj\Debug\MaHoaTepTin.csproj.CoreCompileInputs.cache
+D:\Projects\K62ATBMTT\MaHoaTepTin\obj\Debug\MaHoaTepTin.exe
+D:\Projects\K62ATBMTT\MaHoaTepTin\obj\Debug\MaHoaTepTin.pdb

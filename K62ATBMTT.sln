@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K62ATBMTT", "K62ATBMTT\K62ATBMTT.csproj", "{25BEA338-E4A5-4875-B05D-A5E0E40925BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaHoaTepTin", "MaHoaTepTin\MaHoaTepTin.csproj", "{A0D7046A-9CA2-43F2-9DD3-E6925BEB1BB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25BEA338-E4A5-4875-B05D-A5E0E40925BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25BEA338-E4A5-4875-B05D-A5E0E40925BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25BEA338-E4A5-4875-B05D-A5E0E40925BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25BEA338-E4A5-4875-B05D-A5E0E40925BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D7046A-9CA2-43F2-9DD3-E6925BEB1BB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D7046A-9CA2-43F2-9DD3-E6925BEB1BB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D7046A-9CA2-43F2-9DD3-E6925BEB1BB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D7046A-9CA2-43F2-9DD3-E6925BEB1BB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {010CBA61-F058-4AB0-BBA0-48619D110CA1}
+	EndGlobalSection
+EndGlobal
