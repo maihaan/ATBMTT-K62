@@ -31,23 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.rbMaHoa = new System.Windows.Forms.RadioButton();
             this.rbGiaiMa = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.tbDuongDan = new System.Windows.Forms.TextBox();
+            this.pbTienTrinh = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btThucHien = new System.Windows.Forms.Button();
+            this.btTim = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rbMaHoa
             // 
             this.rbMaHoa.AutoSize = true;
-            this.rbMaHoa.Location = new System.Drawing.Point(13, 13);
+            this.rbMaHoa.Location = new System.Drawing.Point(12, 12);
             this.rbMaHoa.Name = "rbMaHoa";
             this.rbMaHoa.Size = new System.Drawing.Size(73, 21);
             this.rbMaHoa.TabIndex = 0;
             this.rbMaHoa.TabStop = true;
             this.rbMaHoa.Text = "Mã hóa";
             this.rbMaHoa.UseVisualStyleBackColor = true;
+            this.rbMaHoa.CheckedChanged += new System.EventHandler(this.rbMaHoa_CheckedChanged);
             // 
             // rbGiaiMa
             // 
@@ -59,21 +60,22 @@
             this.rbGiaiMa.TabStop = true;
             this.rbGiaiMa.Text = "Giải mã";
             this.rbGiaiMa.UseVisualStyleBackColor = true;
+            this.rbGiaiMa.CheckedChanged += new System.EventHandler(this.rbGiaiMa_CheckedChanged);
             // 
-            // textBox1
+            // tbDuongDan
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(352, 23);
-            this.textBox1.TabIndex = 2;
+            this.tbDuongDan.Location = new System.Drawing.Point(13, 57);
+            this.tbDuongDan.Name = "tbDuongDan";
+            this.tbDuongDan.Size = new System.Drawing.Size(352, 23);
+            this.tbDuongDan.TabIndex = 2;
             // 
-            // progressBar1
+            // pbTienTrinh
             // 
-            this.progressBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.progressBar1.Location = new System.Drawing.Point(0, 142);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(458, 23);
-            this.progressBar1.TabIndex = 5;
+            this.pbTienTrinh.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pbTienTrinh.Location = new System.Drawing.Point(0, 142);
+            this.pbTienTrinh.Name = "pbTienTrinh";
+            this.pbTienTrinh.Size = new System.Drawing.Size(458, 23);
+            this.pbTienTrinh.TabIndex = 5;
             // 
             // label1
             // 
@@ -84,27 +86,29 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Chọn tệp tin";
             // 
-            // button2
+            // btThucHien
             // 
-            this.button2.Image = global::MaHoaTepTin.Properties.Resources.NoCamera;
-            this.button2.Location = new System.Drawing.Point(156, 86);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 50);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Thực hiện";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btThucHien.Image = global::MaHoaTepTin.Properties.Resources.NoCamera;
+            this.btThucHien.Location = new System.Drawing.Point(156, 86);
+            this.btThucHien.Name = "btThucHien";
+            this.btThucHien.Size = new System.Drawing.Size(141, 50);
+            this.btThucHien.TabIndex = 4;
+            this.btThucHien.Text = "Thực hiện";
+            this.btThucHien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btThucHien.UseVisualStyleBackColor = true;
+            this.btThucHien.Click += new System.EventHandler(this.btThucHien_Click);
             // 
-            // button1
+            // btTim
             // 
-            this.button1.Image = global::MaHoaTepTin.Properties.Resources.SearchIcon20;
-            this.button1.Location = new System.Drawing.Point(371, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Tìm";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btTim.Image = global::MaHoaTepTin.Properties.Resources.SearchIcon20;
+            this.btTim.Location = new System.Drawing.Point(371, 53);
+            this.btTim.Name = "btTim";
+            this.btTim.Size = new System.Drawing.Size(75, 30);
+            this.btTim.TabIndex = 3;
+            this.btTim.Text = "Tìm";
+            this.btTim.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btTim.UseVisualStyleBackColor = true;
+            this.btTim.Click += new System.EventHandler(this.btTim_Click);
             // 
             // Form1
             // 
@@ -112,10 +116,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 165);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pbTienTrinh);
+            this.Controls.Add(this.btThucHien);
+            this.Controls.Add(this.btTim);
+            this.Controls.Add(this.tbDuongDan);
             this.Controls.Add(this.rbGiaiMa);
             this.Controls.Add(this.rbMaHoa);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,10 +137,10 @@
 
         private System.Windows.Forms.RadioButton rbMaHoa;
         private System.Windows.Forms.RadioButton rbGiaiMa;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.TextBox tbDuongDan;
+        private System.Windows.Forms.Button btTim;
+        private System.Windows.Forms.Button btThucHien;
+        private System.Windows.Forms.ProgressBar pbTienTrinh;
         private System.Windows.Forms.Label label1;
     }
 }
