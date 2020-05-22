@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbMaHoa = new System.Windows.Forms.RadioButton();
+            this.rbGiaiMa = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,27 +38,27 @@
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // rbMaHoa
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(13, 13);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(73, 21);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Mã hóa";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbMaHoa.AutoSize = true;
+            this.rbMaHoa.Location = new System.Drawing.Point(13, 13);
+            this.rbMaHoa.Name = "rbMaHoa";
+            this.rbMaHoa.Size = new System.Drawing.Size(73, 21);
+            this.rbMaHoa.TabIndex = 0;
+            this.rbMaHoa.TabStop = true;
+            this.rbMaHoa.Text = "Mã hóa";
+            this.rbMaHoa.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbGiaiMa
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(137, 13);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(74, 21);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Giải mã";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbGiaiMa.AutoSize = true;
+            this.rbGiaiMa.Location = new System.Drawing.Point(137, 13);
+            this.rbGiaiMa.Name = "rbGiaiMa";
+            this.rbGiaiMa.Size = new System.Drawing.Size(74, 21);
+            this.rbGiaiMa.TabIndex = 1;
+            this.rbGiaiMa.TabStop = true;
+            this.rbGiaiMa.Text = "Giải mã";
+            this.rbGiaiMa.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -116,11 +116,11 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbGiaiMa);
+            this.Controls.Add(this.rbMaHoa);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Mã hóa và Giải mã tệp tin";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -131,8 +131,8 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbMaHoa;
+        private System.Windows.Forms.RadioButton rbGiaiMa;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
